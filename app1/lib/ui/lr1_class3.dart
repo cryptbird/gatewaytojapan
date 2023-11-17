@@ -20,199 +20,202 @@ class Lr1_class3 extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(
-          child: Padding(
-            // padding: const EdgeInsets.fromLTRB(25, 0, 25, 125),
-            padding: const EdgeInsets.fromLTRB(25, 75, 25, 125),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Image(image: AssetImage('assets/images/gatewaytojapan.jpeg'),
-                      height: MediaQuery.of(context).size.height*0.25,
-                      width: MediaQuery.of(context).size.width*0.25,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Column(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.fromLTRB(160, 0, 0, 0),
-                          child:  FloatingActionButton(
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Padding(
+              // padding: const EdgeInsets.fromLTRB(25, 0, 25, 125),
+              padding: const EdgeInsets.fromLTRB(25, 75, 25, 125),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Image(image: AssetImage('assets/images/gatewaytojapan.jpeg'),
+                        height: MediaQuery.of(context).size.height*0.25,
+                        width: MediaQuery.of(context).size.width*0.25,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Column(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(160, 0, 0, 0),
+                            child:  FloatingActionButton(
 
-                            onPressed: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const Lr1_classes()));
-                            },
+                              onPressed: (){
+                                Navigator.push(context, MaterialPageRoute(builder: (context)=>const Lr1_classes()));
+                              },
+                              child: Text(
+                                '<-',
+                                style: TextStyle(
+                                    fontSize: 26
+                                ),
+
+                              ),
+                              backgroundColor: Colors.black,
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
                             child: Text(
-                              '<-',
+                              'CLASS 3',
                               style: TextStyle(
-                                  fontSize: 26
-                              ),
-
-                            ),
-                            backgroundColor: Colors.black,
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
-                          child: Text(
-                            'CLASS 3',
-                            style: TextStyle(
-                              fontSize: 28,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
-                              decoration: TextDecoration.underline,
-                            ),
-                          ),
-                        )
-                      ],
-                    )
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(70, 0, 0, 0),
-                  child: Text(
-                    'CLASS VIDEOS',
-
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
-
-                    ),
-                  ),
-                ),
-
-                Padding(padding: const EdgeInsets.fromLTRB(60,20, 0, 0),
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height*0.07,
-                        width: MediaQuery.of(context).size.width*0.5,
-                        child: ElevatedButton(
-                            onPressed: ()async {
-                              const url = 'https://drive.google.com/file/d/1txUY_53n-yrC5OjgCPGpqnuRylAzoKZY/view?usp=sharing'; // Replace with your web page URL
-                              await launchUrlString(url);
-
-                            },
-
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder( //to set border radius to button
-                                  borderRadius: BorderRadius.circular(30)
-                              ),
-                              primary: Colors.pinkAccent,
-                            ),
-                            child: Text('V3-1',
-                              style: TextStyle(
+                                fontSize: 28,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
-                                fontSize: 20,
-                              ),)
-                        ),
-                      ),
-
+                                decoration: TextDecoration.underline,
+                              ),
+                            ),
+                          )
+                        ],
+                      )
                     ],
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(90, 30, 0, 0),
-                  child: Text(
-                    'MATERIALS',
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(70, 0, 0, 0),
+                    child: Text(
+                      'CLASS VIDEOS',
 
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
 
+                      ),
                     ),
                   ),
-                ),
 
-
-                Padding(padding: const EdgeInsets.fromLTRB(60,20, 0, 0),
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height*0.07,
-                        width: MediaQuery.of(context).size.width*0.5,
-                        child: ElevatedButton(
+                  Padding(padding: const EdgeInsets.fromLTRB(60,20, 0, 0),
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height*0.07,
+                          width: MediaQuery.of(context).size.width*0.5,
+                          child: ElevatedButton(
                               onPressed: ()async {
-                              const url = 'https://drive.google.com/file/d/1R_zjNyjgRtBVpR0u4MojzTqvo3gq9kwv/view?usp=sharing'; // Replace with your web page URL
-                              await launchUrlString(url);
+                                const url = 'https://drive.google.com/file/d/1txUY_53n-yrC5OjgCPGpqnuRylAzoKZY/view?usp=sharing'; // Replace with your web page URL
+                                await launchUrlString(url);
 
-                            },
+                              },
 
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder( //to set border radius to button
-                                  borderRadius: BorderRadius.circular(30)
+                              style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder( //to set border radius to button
+                                    borderRadius: BorderRadius.circular(30)
+                                ),
+                                primary: Colors.pinkAccent,
                               ),
-                              primary: Colors.pinkAccent,
-                            ),
-                            child: Text('M3-1',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black,
-                                fontSize: 20,
-                              ),)
+                              child: Text('V3-1',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                ),)
+                          ),
                         ),
-                      ),
 
-                    ],
-                  ),
-                ),
-
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(70, 30, 0, 0),
-                  child: Text(
-                    'ASSIGNMENT',
-
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
-
+                      ],
                     ),
                   ),
-                ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(90, 30, 0, 0),
+                    child: Text(
+                      'MATERIALS',
 
-                Padding(padding: const EdgeInsets.fromLTRB(60,20, 0, 0),
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height*0.07,
-                        width: MediaQuery.of(context).size.width*0.5,
-                        child: ElevatedButton(
-                        onPressed: ()async {
-                              const url = 'https://drive.google.com/file/d/1Kc0Cgt5ZPiICMBhRAFBZeSBHjww2zbvj/view?usp=sharing'; // Replace with your web page URL
-                              await launchUrlString(url);
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
 
-                            },
-
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder( //to set border radius to button
-                                  borderRadius: BorderRadius.circular(30)
-                              ),
-                              primary: Colors.pinkAccent,
-                            ),
-                            child: Text('A3-1',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black,
-                                fontSize: 20,
-                              ),)
-                        ),
                       ),
-
-                    ],
+                    ),
                   ),
-                ),
 
-              ],
+
+                  Padding(padding: const EdgeInsets.fromLTRB(60,20, 0, 0),
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height*0.07,
+                          width: MediaQuery.of(context).size.width*0.5,
+                          child: ElevatedButton(
+                                onPressed: ()async {
+                                const url = 'https://drive.google.com/file/d/1R_zjNyjgRtBVpR0u4MojzTqvo3gq9kwv/view?usp=sharing'; // Replace with your web page URL
+                                await launchUrlString(url);
+
+                              },
+
+                              style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder( //to set border radius to button
+                                    borderRadius: BorderRadius.circular(30)
+                                ),
+                                primary: Colors.pinkAccent,
+                              ),
+                              child: Text('M3-1',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                ),)
+                          ),
+                        ),
+
+                      ],
+                    ),
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(70, 30, 0, 0),
+                    child: Text(
+                      'ASSIGNMENT',
+
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+
+                      ),
+                    ),
+                  ),
+
+                  Padding(padding: const EdgeInsets.fromLTRB(60,20, 0, 0),
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height*0.07,
+                          width: MediaQuery.of(context).size.width*0.5,
+                          child: ElevatedButton(
+                          onPressed: ()async {
+                                const url = 'https://drive.google.com/file/d/1Kc0Cgt5ZPiICMBhRAFBZeSBHjww2zbvj/view?usp=sharing'; // Replace with your web page URL
+                                await launchUrlString(url);
+
+                              },
+
+                              style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder( //to set border radius to button
+                                    borderRadius: BorderRadius.circular(30)
+                                ),
+                                primary: Colors.pinkAccent,
+                              ),
+                              child: Text('A3-1',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                ),)
+                          ),
+                        ),
+
+                      ],
+                    ),
+                  ),
+
+                ],
+              ),
             ),
           ),
         ),

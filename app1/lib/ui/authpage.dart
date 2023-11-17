@@ -1,5 +1,6 @@
 import 'package:app1/ui/homepage.dart';
 import 'package:app1/ui/l1_basiclevelhome.dart';
+import 'package:app1/ui/registerpage.dart';
 import 'package:app1/ui/signinpage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

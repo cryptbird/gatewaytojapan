@@ -19,162 +19,142 @@ class Lr1_class9 extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(
-          child: Padding(
-            // padding: const EdgeInsets.fromLTRB(25, 0, 25, 125),
-            padding: const EdgeInsets.fromLTRB(25, 75, 25, 125),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Image(image: AssetImage('assets/images/gatewaytojapan.jpeg'),
-                      height: MediaQuery.of(context).size.height*0.25,
-                      width: MediaQuery.of(context).size.width*0.25,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Column(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.fromLTRB(160, 0, 0, 0),
-                          child:  FloatingActionButton(
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Padding(
+              // padding: const EdgeInsets.fromLTRB(25, 0, 25, 125),
+              padding: const EdgeInsets.fromLTRB(25, 75, 25, 125),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Image(image: AssetImage('assets/images/gatewaytojapan.jpeg'),
+                        height: MediaQuery.of(context).size.height*0.25,
+                        width: MediaQuery.of(context).size.width*0.25,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Column(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(160, 0, 0, 0),
+                            child:  FloatingActionButton(
 
-                            onPressed: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const Lr1_classes()));
-                            },
+                              onPressed: (){
+                                Navigator.push(context, MaterialPageRoute(builder: (context)=>const Lr1_classes()));
+                              },
+                              child: Text(
+                                '<-',
+                                style: TextStyle(
+                                    fontSize: 26
+                                ),
+
+                              ),
+                              backgroundColor: Colors.black,
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
                             child: Text(
-                              '<-',
+                              'CLASS 9',
                               style: TextStyle(
-                                  fontSize: 26
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                                decoration: TextDecoration.underline,
                               ),
-
                             ),
-                            backgroundColor: Colors.black,
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(70, 0, 0, 0),
+                    child: Text(
+                      'CLASS VIDEOS',
+
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+
+                      ),
+                    ),
+                  ),
+
+                  Padding(padding: const EdgeInsets.fromLTRB(30,20, 0, 0),
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height*0.07,
+                          width: MediaQuery.of(context).size.width*0.3,
+                          child: ElevatedButton(
+                              onPressed: (){},
+
+                              style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder( //to set border radius to button
+                                    borderRadius: BorderRadius.circular(30)
+                                ),
+                                primary: Colors.pinkAccent,
+                              ),
+                              child: Text('V9-1',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                ),)
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
-                          child: Text(
-                            'CLASS 9',
-                            style: TextStyle(
-                              fontSize: 28,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
-                              decoration: TextDecoration.underline,
+                          padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                          child: SizedBox(
+                            height: MediaQuery.of(context).size.height*0.07,
+                            width: MediaQuery.of(context).size.width*0.3,
+                            child: ElevatedButton(
+                                onPressed: (){},
+
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder( //to set border radius to button
+                                      borderRadius: BorderRadius.circular(30)
+                                  ),
+                                  primary: Colors.pinkAccent,
+                                ),
+                                child: Text('V9-2',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                    fontSize: 20,
+                                  ),)
                             ),
                           ),
-                        )
+                        ),
                       ],
-                    )
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(70, 0, 0, 0),
-                  child: Text(
-                    'CLASS VIDEOS',
-
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
-
                     ),
                   ),
-                ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(90, 30, 0, 0),
+                    child: Text(
+                      'MATERIALS',
 
-                Padding(padding: const EdgeInsets.fromLTRB(30,20, 0, 0),
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height*0.07,
-                        width: MediaQuery.of(context).size.width*0.3,
-                        child: ElevatedButton(
-                            onPressed: (){},
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
 
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder( //to set border radius to button
-                                  borderRadius: BorderRadius.circular(30)
-                              ),
-                              primary: Colors.pinkAccent,
-                            ),
-                            child: Text('V9-1',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black,
-                                fontSize: 20,
-                              ),)
-                        ),
                       ),
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
-                        child: SizedBox(
-                          height: MediaQuery.of(context).size.height*0.07,
-                          width: MediaQuery.of(context).size.width*0.3,
-                          child: ElevatedButton(
-                              onPressed: (){},
-
-                              style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder( //to set border radius to button
-                                    borderRadius: BorderRadius.circular(30)
-                                ),
-                                primary: Colors.pinkAccent,
-                              ),
-                              child: Text('V9-2',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                ),)
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(90, 30, 0, 0),
-                  child: Text(
-                    'MATERIALS',
-
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
-
                     ),
                   ),
-                ),
 
-                Padding(padding: const EdgeInsets.fromLTRB(0,20, 0, 0),
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height*0.07,
-                        width: MediaQuery.of(context).size.width*0.26,
-                        child: ElevatedButton(
-                            onPressed: (){},
-
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder( //to set border radius to button
-                                  borderRadius: BorderRadius.circular(30)
-                              ),
-                              primary: Colors.pinkAccent,
-                            ),
-                            child: Text('M9-1',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black,
-                                fontSize: 20,
-                              ),)
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
-                        child: SizedBox(
+                  Padding(padding: const EdgeInsets.fromLTRB(0,20, 0, 0),
+                    child: Row(
+                      children: [
+                        SizedBox(
                           height: MediaQuery.of(context).size.height*0.07,
                           width: MediaQuery.of(context).size.width*0.26,
                           child: ElevatedButton(
@@ -186,7 +166,7 @@ class Lr1_class9 extends StatelessWidget {
                                 ),
                                 primary: Colors.pinkAccent,
                               ),
-                              child: Text('M9-2',
+                              child: Text('M9-1',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black,
@@ -194,122 +174,59 @@ class Lr1_class9 extends StatelessWidget {
                                 ),)
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
-                        child: SizedBox(
-                          height: MediaQuery.of(context).size.height*0.07,
-                          width: MediaQuery.of(context).size.width*0.26,
-                          child: ElevatedButton(
-                              onPressed: (){},
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                          child: SizedBox(
+                            height: MediaQuery.of(context).size.height*0.07,
+                            width: MediaQuery.of(context).size.width*0.26,
+                            child: ElevatedButton(
+                                onPressed: (){},
 
-                              style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder( //to set border radius to button
-                                    borderRadius: BorderRadius.circular(30)
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder( //to set border radius to button
+                                      borderRadius: BorderRadius.circular(30)
+                                  ),
+                                  primary: Colors.pinkAccent,
                                 ),
-                                primary: Colors.pinkAccent,
-                              ),
-                              child: Text('M9-3',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                ),)
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(padding: const EdgeInsets.fromLTRB(30,20, 0, 0),
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height*0.07,
-                        width: MediaQuery.of(context).size.width*0.3,
-                        child: ElevatedButton(
-                            onPressed: (){},
-
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder( //to set border radius to button
-                                  borderRadius: BorderRadius.circular(30)
-                              ),
-                              primary: Colors.pinkAccent,
+                                child: Text('M9-2',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                    fontSize: 20,
+                                  ),)
                             ),
-                            child: Text('M9-4',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black,
-                                fontSize: 20,
-                              ),)
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
-                        child: SizedBox(
-                          height: MediaQuery.of(context).size.height*0.07,
-                          width: MediaQuery.of(context).size.width*0.3,
-                          child: ElevatedButton(
-                              onPressed: (){},
-
-                              style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder( //to set border radius to button
-                                    borderRadius: BorderRadius.circular(30)
-                                ),
-                                primary: Colors.pinkAccent,
-                              ),
-                              child: Text('M9-5',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                ),)
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(70, 30, 0, 0),
-                  child: Text(
-                    'ASSIGNMENT',
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                          child: SizedBox(
+                            height: MediaQuery.of(context).size.height*0.07,
+                            width: MediaQuery.of(context).size.width*0.26,
+                            child: ElevatedButton(
+                                onPressed: (){},
 
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
-
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder( //to set border radius to button
+                                      borderRadius: BorderRadius.circular(30)
+                                  ),
+                                  primary: Colors.pinkAccent,
+                                ),
+                                child: Text('M9-3',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                    fontSize: 20,
+                                  ),)
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                ),
-                Padding(padding: const EdgeInsets.fromLTRB(30,20, 0, 0),
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height*0.07,
-                        width: MediaQuery.of(context).size.width*0.3,
-                        child: ElevatedButton(
-                            onPressed: (){},
-
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder( //to set border radius to button
-                                  borderRadius: BorderRadius.circular(30)
-                              ),
-                              primary: Colors.pinkAccent,
-                            ),
-                            child: Text('A9-1',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black,
-                                fontSize: 20,
-                              ),)
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
-                        child: SizedBox(
+                  Padding(padding: const EdgeInsets.fromLTRB(30,20, 0, 0),
+                    child: Row(
+                      children: [
+                        SizedBox(
                           height: MediaQuery.of(context).size.height*0.07,
                           width: MediaQuery.of(context).size.width*0.3,
                           child: ElevatedButton(
@@ -321,7 +238,7 @@ class Lr1_class9 extends StatelessWidget {
                                 ),
                                 primary: Colors.pinkAccent,
                               ),
-                              child: Text('A9-2',
+                              child: Text('M9-4',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black,
@@ -329,12 +246,98 @@ class Lr1_class9 extends StatelessWidget {
                                 ),)
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                ),
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                          child: SizedBox(
+                            height: MediaQuery.of(context).size.height*0.07,
+                            width: MediaQuery.of(context).size.width*0.3,
+                            child: ElevatedButton(
+                                onPressed: (){},
 
-              ],
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder( //to set border radius to button
+                                      borderRadius: BorderRadius.circular(30)
+                                  ),
+                                  primary: Colors.pinkAccent,
+                                ),
+                                child: Text('M9-5',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                    fontSize: 20,
+                                  ),)
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(70, 30, 0, 0),
+                    child: Text(
+                      'ASSIGNMENT',
+
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+
+                      ),
+                    ),
+                  ),
+                  Padding(padding: const EdgeInsets.fromLTRB(30,20, 0, 0),
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height*0.07,
+                          width: MediaQuery.of(context).size.width*0.3,
+                          child: ElevatedButton(
+                              onPressed: (){},
+
+                              style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder( //to set border radius to button
+                                    borderRadius: BorderRadius.circular(30)
+                                ),
+                                primary: Colors.pinkAccent,
+                              ),
+                              child: Text('A9-1',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                ),)
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                          child: SizedBox(
+                            height: MediaQuery.of(context).size.height*0.07,
+                            width: MediaQuery.of(context).size.width*0.3,
+                            child: ElevatedButton(
+                                onPressed: (){},
+
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder( //to set border radius to button
+                                      borderRadius: BorderRadius.circular(30)
+                                  ),
+                                  primary: Colors.pinkAccent,
+                                ),
+                                child: Text('A9-2',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                    fontSize: 20,
+                                  ),)
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                ],
+              ),
             ),
           ),
         ),
